@@ -16,11 +16,11 @@ def check_health_pod(addr: str):
             target=addr,
         )
     except grpc.RpcError as e:
-        print("The pod is unhealthy")
+        print('The pod is unhealthy')
         print(e)
         raise e
 
-    print("The pod is healthy")
+    print('The pod is healthy')
 
 
 if __name__ == "__main__":
